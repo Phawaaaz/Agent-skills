@@ -4,6 +4,8 @@
 
 A curated set of agent skills for Claude Code and other coding agents: what each one does, when it kicks in, and one command to install it.
 
+**Browse the catalog:** https://agent-skills-kappa.vercel.app
+
 **8** skills live in this repo. The other **11** are favourites from other authors, linked to their own repos so you always get the latest version.
 
 ## Install

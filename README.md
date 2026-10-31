@@ -14,20 +14,20 @@ Every skill installs with the open [`skills`](https://github.com/vercel-labs/ski
 
 ```bash
 # all skills from this repo
-npx skills add phawaaaz/skills
+npx skills add Phawaaaz/Agent-skills
 
 # just one
-npx skills add phawaaaz/skills --skill design-fundamentals
+npx skills add Phawaaaz/Agent-skills --skill design-fundamentals
 
 # install for every project (user level) instead of the current one
-npx skills add phawaaaz/skills -g
+npx skills add Phawaaaz/Agent-skills -g
 ```
 
 <details>
 <summary>Without Node: copy the folder by hand</summary>
 
 ```bash
-git clone https://github.com/phawaaaz/skills.git
+git clone https://github.com/Phawaaaz/Agent-skills.git
 cp -R skills/skills/design-fundamentals ~/.claude/skills/
 ```
 
@@ -42,12 +42,12 @@ You don't call a skill by name. Each one has a description of when it applies, a
 
 | Skill | What it does | Use it for | Install |
 |---|---|---|---|
-| [design-fundamentals](skills/design-fundamentals) | Core visual rules: hierarchy, type scale, grids, whitespace, optical balance, edge placement and line length. | A screen or page that looks cluttered, cheap or flat; Choosing font sizes and spacing; Laying out many elements on one page | `npx skills add phawaaaz/skills --skill design-fundamentals` |
-| [web-page-design](skills/web-page-design) | Layout and content patterns for websites: heroes, about pages, footers, editorial layouts, mobile-first rules and header copy. | Building or redesigning a landing page or portfolio; Hero, about and footer sections; A site that looks like every other website | `npx skills add phawaaaz/skills --skill web-page-design` |
-| [web-visual-style](skills/web-visual-style) | Styling recipes that make a site feel premium: editorial looks, button and gradient styles, tactile animated components. | Designs that look generic or flat; Styling buttons and CTAs; Picking gradients or an animated UI library | `npx skills add phawaaaz/skills --skill web-visual-style` |
-| [ux-interaction-patterns](skills/ux-interaction-patterns) | Behaviour patterns: undo instead of "Are you sure?", soft delete, friction only where it matters, send delays, hover-intent menus. | Delete, archive and confirmation flows; Toasts, undo and message sending; Dropdowns and mega menus | `npx skills add phawaaaz/skills --skill ux-interaction-patterns` |
-| [anti-ai-slop-ui](skills/anti-ai-slop-ui) | Keeps AI-built apps from looking vibe-coded: the five tells of AI dashboards and a design.md rulebook to lock in first. | Generating UI with an AI agent; Dashboards and admin panels; Anything that "looks AI-generated" | `npx skills add phawaaaz/skills --skill anti-ai-slop-ui` |
-| [design-taste](skills/design-taste) | Learns your personal design taste from comments, references and corrections, and applies it to every design the agent makes. | "I like how compact this is" or "too rounded"; Sharing references you like; Designing anything so it matches your taste | `npx skills add phawaaaz/skills --skill design-taste` |
+| [design-fundamentals](skills/design-fundamentals) | Core visual rules: hierarchy, type scale, grids, whitespace, optical balance, edge placement and line length. | A screen or page that looks cluttered, cheap or flat; Choosing font sizes and spacing; Laying out many elements on one page | `npx skills add Phawaaaz/Agent-skills --skill design-fundamentals` |
+| [web-page-design](skills/web-page-design) | Layout and content patterns for websites: heroes, about pages, footers, editorial layouts, mobile-first rules and header copy. | Building or redesigning a landing page or portfolio; Hero, about and footer sections; A site that looks like every other website | `npx skills add Phawaaaz/Agent-skills --skill web-page-design` |
+| [web-visual-style](skills/web-visual-style) | Styling recipes that make a site feel premium: editorial looks, button and gradient styles, tactile animated components. | Designs that look generic or flat; Styling buttons and CTAs; Picking gradients or an animated UI library | `npx skills add Phawaaaz/Agent-skills --skill web-visual-style` |
+| [ux-interaction-patterns](skills/ux-interaction-patterns) | Behaviour patterns: undo instead of "Are you sure?", soft delete, friction only where it matters, send delays, hover-intent menus. | Delete, archive and confirmation flows; Toasts, undo and message sending; Dropdowns and mega menus | `npx skills add Phawaaaz/Agent-skills --skill ux-interaction-patterns` |
+| [anti-ai-slop-ui](skills/anti-ai-slop-ui) | Keeps AI-built apps from looking vibe-coded: the five tells of AI dashboards and a design.md rulebook to lock in first. | Generating UI with an AI agent; Dashboards and admin panels; Anything that "looks AI-generated" | `npx skills add Phawaaaz/Agent-skills --skill anti-ai-slop-ui` |
+| [design-taste](skills/design-taste) | Learns your personal design taste from comments, references and corrections, and applies it to every design the agent makes. | "I like how compact this is" or "too rounded"; Sharing references you like; Designing anything so it matches your taste | `npx skills add Phawaaaz/Agent-skills --skill design-taste` |
 | [frontend-design](https://github.com/anthropics/skills)<br><sub>by Anthropic</sub> | Direction for distinctive, intentional UI: aesthetic choices and typography that don't read as templated defaults. | Starting a new interface; Reshaping an existing UI with a clear point of view | `npx skills add anthropics/skills --skill frontend-design` |
 | [impeccable](https://github.com/pbakaus/impeccable)<br><sub>by Paul Bakaus</sub> | A full frontend design toolkit: critique, audit, polish, animate, theme and harden interfaces, with live browser iteration. | Design reviews and UX audits; Making a bland UI bolder or a loud one quieter; Design systems and tokens | `npx skills add pbakaus/impeccable` |
 
@@ -62,14 +62,14 @@ You don't call a skill by name. Each one has a description of when it applies, a
 
 | Skill | What it does | Use it for | Install |
 |---|---|---|---|
-| [system-design-scaling](skills/system-design-scaling) | A practical scaling playbook: load balancers, caching done right, read replicas, sharding, CDNs, load tests and CI/CD. | "My app crashed with users"; Redis, caching and database bottlenecks; GitHub Actions and system design interviews | `npx skills add phawaaaz/skills --skill system-design-scaling` |
+| [system-design-scaling](skills/system-design-scaling) | A practical scaling playbook: load balancers, caching done right, read replicas, sharding, CDNs, load tests and CI/CD. | "My app crashed with users"; Redis, caching and database bottlenecks; GitHub Actions and system design interviews | `npx skills add Phawaaaz/Agent-skills --skill system-design-scaling` |
 | [supabase-postgres-best-practices](https://github.com/supabase/agent-skills)<br><sub>by Supabase</sub> | Postgres rules for schema, migrations, RLS, indexes, functions, queues, pgvector and slow-query diagnosis. | Any table, column or migration change; RLS policies and their tests; Slow queries, locks and connection limits | `npx skills add supabase/agent-skills --skill supabase-postgres-best-practices` |
 
 ## Quality & workflow
 
 | Skill | What it does | Use it for | Install |
 |---|---|---|---|
-| [ai-assisted-engineering](skills/ai-assisted-engineering) | Habits for shipping safely when AI writes most of the code: four pre-production questions, planning first, keeping code lean. | Before you ship, merge or deploy AI-written code; Setting up skills and agents for a team; AI making the codebase bloated | `npx skills add phawaaaz/skills --skill ai-assisted-engineering` |
+| [ai-assisted-engineering](skills/ai-assisted-engineering) | Habits for shipping safely when AI writes most of the code: four pre-production questions, planning first, keeping code lean. | Before you ship, merge or deploy AI-written code; Setting up skills and agents for a team; AI making the codebase bloated | `npx skills add Phawaaaz/Agent-skills --skill ai-assisted-engineering` |
 | [code-review](https://github.com/mattpocock/skills)<br><sub>by Matt Pocock</sub> | Reviews changes since a commit or branch on two axes, repo standards and the original spec, in parallel. | Reviewing a branch or PR; "Review since X" | `npx skills add mattpocock/skills --skill code-review` |
 | [code-review-and-quality](https://github.com/addyosmani/agent-skills)<br><sub>by Addy Osmani</sub> | Multi-axis review of any change before it reaches main, whether a human or an agent wrote it. | A diff or PR before merging; Checking code quality across dimensions | `npx skills add addyosmani/agent-skills --skill code-review-and-quality` |
 | [security-and-hardening](https://github.com/addyosmani/agent-skills)<br><sub>by Addy Osmani</sub> | Hardens code against the OWASP Top Ten, audits dependencies and supply chain, and covers GDPR and CCPA basics. | Auth, sessions and user input; Dependency audit findings; Personal data and privacy | `npx skills add addyosmani/agent-skills --skill security-and-hardening` |

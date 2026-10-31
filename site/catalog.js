@@ -1,5 +1,5 @@
 window.CATALOG = {
-  "repo": "phawaaaz/skills",
+  "repo": "Phawaaaz/Agent-skills",
   "categories": [
     {
       "id": "design",
@@ -23,84 +23,84 @@ window.CATALOG = {
       "name": "design-fundamentals",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Core visual rules: hierarchy, type scale, grids, whitespace, optical balance, edge placement and line length.",
       "useFor": [
         "A screen or page that looks cluttered, cheap or flat",
         "Choosing font sizes and spacing",
         "Laying out many elements on one page"
       ],
-      "install": "npx skills add phawaaaz/skills --skill design-fundamentals",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-fundamentals",
       "mine": true
     },
     {
       "name": "web-page-design",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Layout and content patterns for websites: heroes, about pages, footers, editorial layouts, mobile-first rules and header copy.",
       "useFor": [
         "Building or redesigning a landing page or portfolio",
         "Hero, about and footer sections",
         "A site that looks like every other website"
       ],
-      "install": "npx skills add phawaaaz/skills --skill web-page-design",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill web-page-design",
       "mine": true
     },
     {
       "name": "web-visual-style",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Styling recipes that make a site feel premium: editorial looks, button and gradient styles, tactile animated components.",
       "useFor": [
         "Designs that look generic or flat",
         "Styling buttons and CTAs",
         "Picking gradients or an animated UI library"
       ],
-      "install": "npx skills add phawaaaz/skills --skill web-visual-style",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill web-visual-style",
       "mine": true
     },
     {
       "name": "ux-interaction-patterns",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Behaviour patterns: undo instead of \"Are you sure?\", soft delete, friction only where it matters, send delays, hover-intent menus.",
       "useFor": [
         "Delete, archive and confirmation flows",
         "Toasts, undo and message sending",
         "Dropdowns and mega menus"
       ],
-      "install": "npx skills add phawaaaz/skills --skill ux-interaction-patterns",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill ux-interaction-patterns",
       "mine": true
     },
     {
       "name": "anti-ai-slop-ui",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Keeps AI-built apps from looking vibe-coded: the five tells of AI dashboards and a design.md rulebook to lock in first.",
       "useFor": [
         "Generating UI with an AI agent",
         "Dashboards and admin panels",
         "Anything that \"looks AI-generated\""
       ],
-      "install": "npx skills add phawaaaz/skills --skill anti-ai-slop-ui",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill anti-ai-slop-ui",
       "mine": true
     },
     {
       "name": "design-taste",
       "category": "design",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Learns your personal design taste from comments, references and corrections, and applies it to every design the agent makes.",
       "useFor": [
         "\"I like how compact this is\" or \"too rounded\"",
         "Sharing references you like",
         "Designing anything so it matches your taste"
       ],
-      "install": "npx skills add phawaaaz/skills --skill design-taste",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-taste",
       "mine": true
     },
     {
@@ -162,14 +162,14 @@ window.CATALOG = {
       "name": "system-design-scaling",
       "category": "backend",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "A practical scaling playbook: load balancers, caching done right, read replicas, sharding, CDNs, load tests and CI/CD.",
       "useFor": [
         "\"My app crashed with users\"",
         "Redis, caching and database bottlenecks",
         "GitHub Actions and system design interviews"
       ],
-      "install": "npx skills add phawaaaz/skills --skill system-design-scaling",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill system-design-scaling",
       "mine": true
     },
     {
@@ -190,14 +190,14 @@ window.CATALOG = {
       "name": "ai-assisted-engineering",
       "category": "quality",
       "author": "Akinola Fawaz",
-      "source": "phawaaaz/skills",
+      "source": "Phawaaaz/Agent-skills",
       "what": "Habits for shipping safely when AI writes most of the code: four pre-production questions, planning first, keeping code lean.",
       "useFor": [
         "Before you ship, merge or deploy AI-written code",
         "Setting up skills and agents for a team",
         "AI making the codebase bloated"
       ],
-      "install": "npx skills add phawaaaz/skills --skill ai-assisted-engineering",
+      "install": "npx skills add Phawaaaz/Agent-skills --skill ai-assisted-engineering",
       "mine": true
     },
     {

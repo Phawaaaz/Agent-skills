@@ -44,7 +44,7 @@ npx skills add ${repo} -g
 
 \`\`\`bash
 git clone https://github.com/${repo}.git
-cp -R skills/skills/design-fundamentals ~/.claude/skills/
+cp -R Agent-skills/skills/design-fundamentals ~/.claude/skills/
 \`\`\`
 
 A skill is just a folder with a \`SKILL.md\`. Put it in \`~/.claude/skills/\` (all projects) or \`.claude/skills/\` (one project) and restart the agent.
@@ -59,7 +59,7 @@ for (const cat of categories) {
   const list = skills.filter((s) => s.category === cat.id);
   md += `\n## ${cat.name}\n\n| Skill | What it does | Use it for | Install |\n|---|---|---|---|\n`;
   for (const s of list) {
-    const by = s.source === repo ? "" : `<br><sub>by ${s.author}</sub>`;
+    const by = s.origin ? `<br><sub>source: ${s.origin}</sub>` : s.source === repo ? "" : `<br><sub>by ${s.author}</sub>`;
     md += `| ${link(s)}${by} | ${s.what} | ${s.useFor.join("; ")} | \`${install(s)}\` |\n`;
   }
 }
@@ -69,7 +69,7 @@ md += `
 
 The skills by Akinola Fawaz were distilled from design and engineering creators on Instagram. Each skill lists its sources in \`SKILL.md\` or \`references/sources.md\`.
 
-Third-party skills belong to their authors and are not copied here. Install them from their repos with the commands above.
+Some third-party skills are copied into this repository. Their sources are listed in the catalog and applicable licenses are in third-party-licenses/ or the skill directory. User-supplied skill files retain their source and attribution statements; their redistribution terms have not been verified.
 
 ## Contributing
 
@@ -79,7 +79,7 @@ To suggest a skill, open an issue with a link to it and one line on when you rea
 writeFileSync(new URL("README.md", root), md);
 
 // The site reads the same data, with the install command worked out here.
-const site = { repo, categories, skills: skills.map((s) => ({ ...s, install: install(s), mine: s.source === repo })) };
+const site = { repo, categories, skills: skills.map((s) => ({ ...s, install: install(s), mine: s.source === repo && !s.origin })) };
 writeFileSync(new URL("site/catalog.js", root), `window.CATALOG = ${JSON.stringify(site, null, 2)};\n`);
 
 console.log(`README.md and site/catalog.js written: ${skills.length} skills`);

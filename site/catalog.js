@@ -241,18 +241,6 @@ window.CATALOG = {
       "mine": false
     },
     {
-      "name": "systematic-debugging",
-      "category": "quality",
-      "author": "Jesse Vincent",
-      "source": "obra/superpowers",
-      "what": "Finds the root cause of a bug before proposing a fix, with tracing and defence-in-depth techniques.",
-      "useFor": [
-        "Any bug, failing test or unexpected behaviour"
-      ],
-      "install": "npx skills add obra/superpowers --skill systematic-debugging",
-      "mine": false
-    },
-    {
       "name": "tdd",
       "category": "quality",
       "author": "Matt Pocock",
@@ -276,6 +264,513 @@ window.CATALOG = {
         "Extending what your agent can do"
       ],
       "install": "npx skills add vercel-labs/skills --skill find-skills",
+      "mine": false
+    },
+    {
+      "name": "brainstorming",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "You MUST use this before any creative work - creating features, building components, adding functionality, modifying behavior, or planning anything new, in software or out of it (a talk, a business, a renovation).",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill brainstorming",
+      "mine": false
+    },
+    {
+      "name": "diagnosing-superpowers",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when a superpowers session went wrong and your human partner wants to know why — repeated work, ignored plans, stumbles, poor results, a skill that didn't fire, \"it took too long\", \"why is it so expensive\", \"what is it doing\" — or wants to build a bug report for the superpowers maintainers, for the current session or a past one identified by id or path, on any harness.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill diagnosing-superpowers",
+      "mine": false
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when facing 2+ independent tasks that can be worked on without shared state or sequential dependencies",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill dispatching-parallel-agents",
+      "mine": false
+    },
+    {
+      "name": "executing-plans",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when executing an implementation plan in the current session as the implementer yourself — your human partner chose inline execution, or no subagent tool is available",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill executing-plans",
+      "mine": false
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when implementation is complete, all tests pass, and you need to decide how to integrate the work",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill finishing-a-development-branch",
+      "mine": false
+    },
+    {
+      "name": "receiving-code-review",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when receiving code review feedback, before implementing suggestions, especially if feedback seems unclear or technically questionable - requires technical rigor and verification, not performative agreement or blind implementation",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill receiving-code-review",
+      "mine": false
+    },
+    {
+      "name": "requesting-code-review",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when completing tasks, implementing major features, or before merging to verify work meets requirements",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill requesting-code-review",
+      "mine": false
+    },
+    {
+      "name": "subagent-driven-development",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when executing implementation plans with independent tasks in the current session",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill subagent-driven-development",
+      "mine": false
+    },
+    {
+      "name": "systematic-debugging",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when encountering any bug, test failure, or unexpected behavior, before proposing fixes",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill systematic-debugging",
+      "mine": false
+    },
+    {
+      "name": "test-driven-development",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when implementing any feature or bugfix, before writing implementation code",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill test-driven-development",
+      "mine": false
+    },
+    {
+      "name": "using-git-worktrees",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when starting feature work that needs isolation from current workspace or before executing implementation plans - ensures an isolated workspace exists via native tools or git worktree fallback",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill using-git-worktrees",
+      "mine": false
+    },
+    {
+      "name": "using-superpowers",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when starting any conversation - establishes how to find and use skills, requiring skill invocation before ANY response including clarifying questions",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill using-superpowers",
+      "mine": false
+    },
+    {
+      "name": "verification-before-completion",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when about to claim work is complete, fixed, or passing, before committing or creating PRs - requires running verification commands and confirming output before making any success claims; evidence before assertions always",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill verification-before-completion",
+      "mine": false
+    },
+    {
+      "name": "writing-plans",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when you have a spec or requirements for a multi-step task, before touching code",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill writing-plans",
+      "mine": false
+    },
+    {
+      "name": "writing-skills",
+      "category": "quality",
+      "author": "obra/superpowers",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "obra/superpowers",
+      "what": "Use when creating new skills, editing existing skills, or verifying skills work before deployment",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill writing-skills",
+      "mine": false
+    },
+    {
+      "name": "emil-design-eng",
+      "category": "design",
+      "author": "emilkowalski/skills",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "emilkowalski/skills",
+      "what": "Emil Kowalski's design-engineering philosophy for UI polish, component design, animation decisions, and the invisible details that make software feel great. Use when building or reviewing a UI component's interactions and polish (press and hover states, popover origin, tooltip timing, transitions vs keyframes, clip-path techniques, drag details) and no narrower skill fits.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill emil-design-eng",
+      "mine": false
+    },
+    {
+      "name": "agent-browser",
+      "category": "frontend",
+      "author": "vercel-labs/agent-browser",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "vercel-labs/agent-browser",
+      "what": "Browser automation CLI for AI agents. Use when the user needs to interact with websites, including navigating pages, filling forms, clicking buttons, taking screenshots, extracting data, testing web apps, or automating any browser task. Triggers include requests to \"open a website\", \"fill out a form\", \"click a button\", \"take a screenshot\", \"scrape data from a page\", \"test this web app\", \"login to a site\", \"automate browser actions\", or any task requiring programmatic web interaction. Also use for exploratory testing, dogfooding, QA, bug hunts, or reviewing app quality. Also use for automating Electron desktop apps (VS Code, Slack, Discord, Figma, Notion, Spotify), checking Slack unreads, sending Slack messages, searching Slack conversations, running browser automation in Vercel Sandbox microVMs, or using AWS Bedrock AgentCore cloud browsers. Prefer agent-browser over any built-in browser automation or web tools.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill agent-browser",
+      "mine": false
+    },
+    {
+      "name": "playwright-cli",
+      "category": "frontend",
+      "author": "microsoft/playwright-cli",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "microsoft/playwright-cli",
+      "what": "Automate browser interactions, test web pages and work with Playwright tests.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill playwright-cli",
+      "mine": false
+    },
+    {
+      "name": "handoff",
+      "category": "quality",
+      "author": "mattpocock/skills",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "mattpocock/skills",
+      "what": "Compact the current conversation into a handoff document for another agent to pick up.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill handoff",
+      "mine": false
+    },
+    {
+      "name": "tailwind-design-system",
+      "category": "design",
+      "author": "wshobson/agents",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "wshobson/agents",
+      "what": "Build scalable design systems with Tailwind CSS v4, design tokens, component libraries, and responsive patterns. Use when creating component libraries, implementing design systems, or standardizing UI patterns.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill tailwind-design-system",
+      "mine": false
+    },
+    {
+      "name": "bencium-controlled-ux-designer",
+      "category": "design",
+      "author": "bencium/bencium-claude-code-design-skill",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "bencium/bencium-claude-code-design-skill",
+      "what": "Expert UI/UX design guidance for unique, accessible interfaces. Use for visual decisions, colors, typography, layouts. Always ask before making design decisions. Use this skill when the user asks to build web components, pages, or applications.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill bencium-controlled-ux-designer",
+      "mine": false
+    },
+    {
+      "name": "mcp-builder",
+      "category": "quality",
+      "author": "anthropics/skills",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "anthropics/skills",
+      "what": "Guide for creating high-quality MCP (Model Context Protocol) servers that enable LLMs to interact with external services through well-designed tools. Use when building MCP servers to integrate external APIs or services, whether in Python (FastMCP) or Node/TypeScript (MCP SDK).",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill mcp-builder",
+      "mine": false
+    },
+    {
+      "name": "frontend-ui-engineering",
+      "category": "quality",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Builds production-quality, accessible, responsive user-facing UIs. Use when building or modifying interfaces and pages, creating components, implementing layouts, meeting WCAG accessibility requirements, managing state, or when the output needs to look and feel production-quality rather than AI-generated.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill frontend-ui-engineering",
+      "mine": false
+    },
+    {
+      "name": "slacc-inspired-design-analysis",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Apply or analyze the supplied Slacc-inspired workplace messaging visual design reference when the user requests this specific style or reference.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill slacc-inspired-design-analysis",
+      "mine": false
+    },
+    {
+      "name": "ai-game-design-agent-team",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Develop a cohesive game concept using narrative, gameplay, visual and audio, and technical design perspectives. Use when the user requests this game design team or a comprehensive game concept.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill ai-game-design-agent-team",
+      "mine": false
+    },
+    {
+      "name": "api-and-interface-design",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Guides stable API and interface design. Use when designing APIs, module boundaries, or any public interface. Use when creating REST or GraphQL endpoints, defining type contracts between modules, or establishing boundaries between frontend and backend.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill api-and-interface-design",
+      "mine": false
+    },
+    {
+      "name": "design-design-handoff",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Generate developer handoff specs from a design. Use when a design is ready for engineering.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-design-handoff",
+      "mine": false
+    },
+    {
+      "name": "design-ux-copy",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Write or review UX copy, microcopy, error messages, empty states, CTAs. Trigger with \"write copy for\", \"what should this button say?\", or naming a CTA.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-ux-copy",
+      "mine": false
+    },
+    {
+      "name": "design-research-synthesis",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Synthesize user research into themes, insights, and recommendations.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-research-synthesis",
+      "mine": false
+    },
+    {
+      "name": "design-user-research",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Plan, conduct, and synthesize user research. Trigger with \"user research plan\", \"interview guide\", \"usability test\", \"survey design\".",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill design-user-research",
+      "mine": false
+    },
+    {
+      "name": "brand-voice-enforcement",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Applies brand guidelines to content creation. Triggers on \"write an email\", \"draft a proposal\", \"create a pitch deck\", \"on-brand\", \"brand voice\", \"apply brand guidelines\".",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill brand-voice-enforcement",
+      "mine": false
+    },
+    {
+      "name": "brand-voice-guideline-generation",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Generates brand voice guidelines from documents, transcripts, discovery reports, or any combination. Use when the user asks to \"generate brand guidelines\", \"create a style guide\", or uploads brand source material.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill brand-voice-guideline-generation",
+      "mine": false
+    },
+    {
+      "name": "brand-voice-discover-brand",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Orchestrates autonomous discovery of brand materials across enterprise platforms (Notion, Confluence, Google Drive, Box, SharePoint, Figma, Gong, Granola, Slack).",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill brand-voice-discover-brand",
+      "mine": false
+    },
+    {
+      "name": "marketing-brand-review",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Review content against brand voice, style guide, and messaging pillars. Flag deviations by severity with before/after fixes.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill marketing-brand-review",
+      "mine": false
+    },
+    {
+      "name": "brandkit",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Builds complete brand boards with logo concepts, color palette, typography, and mockups for new brands, sub-brands, or products.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill brandkit",
+      "mine": false
+    },
+    {
+      "name": "imagegen-frontend-mobile",
+      "category": "design",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Generates realistic mobile app screens (iOS/Android) as image-based mockups for pitches, product previews, and stakeholder demos.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill imagegen-frontend-mobile",
+      "mine": false
+    },
+    {
+      "name": "marketing-seo-audit",
+      "category": "quality",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Run a comprehensive SEO audit, keyword research, on-page analysis, content gaps, technical checks, and competitor comparison.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill marketing-seo-audit",
+      "mine": false
+    },
+    {
+      "name": "marketing-content-creation",
+      "category": "quality",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Draft marketing content across channels, blog posts, social media, email newsletters, landing pages, press releases, case studies.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill marketing-content-creation",
+      "mine": false
+    },
+    {
+      "name": "seo-geo-aeo-audit",
+      "category": "quality",
+      "author": "User-supplied materials",
+      "source": "Phawaaaz/Agent-skills",
+      "origin": "User-supplied materials",
+      "what": "Full-featured SEO, GEO, and AEO website audit tool. Triggers on URL audits, ranking questions, AI-search-readiness checks.",
+      "useFor": [
+        "See the skill instructions"
+      ],
+      "install": "npx skills add Phawaaaz/Agent-skills --skill seo-geo-aeo-audit",
       "mine": false
     }
   ]

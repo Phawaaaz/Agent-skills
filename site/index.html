@@ -136,7 +136,7 @@
     });
 
     const card = (s, i) => {
-      const href = s.mine ? `https://github.com/${repo}/tree/main/skills/${s.name}` : `https://github.com/${s.source}`;
+      const href = s.source === repo ? `https://github.com/${repo}/tree/main/skills/${s.name}` : `https://github.com/${s.source}`;
       return `<article class="card">
         <div>
           ${s.mine ? `<span class="badge">Original</span>` : ""}
